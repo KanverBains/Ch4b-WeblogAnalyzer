@@ -61,4 +61,12 @@ public class LogAnalyzer
     {
         reader.printData();
     }
+    
+    public int numberOfAssesses(){
+        int total = 0;
+        for(int hourCount : hourCounts) {
+            total = total + hourCount;
+        }
+        return total;
+    }
 }
