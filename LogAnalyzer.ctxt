@@ -15,4 +15,6 @@ comment4.target=void\ printData()
 comment4.text=\n\ Print\ the\ lines\ of\ data\ read\ by\ the\ LogfileReader\n
 comment5.params=
 comment5.target=int\ numberOfAssesses()
-numComments=6
+comment6.params=
+comment6.target=int\ busiestHour()
+numComments=7
