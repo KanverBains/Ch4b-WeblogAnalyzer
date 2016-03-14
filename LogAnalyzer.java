@@ -81,4 +81,15 @@ public class LogAnalyzer
         }
         return hour;
     }
+    public int quietestHour(){
+        int lowest = hourCounts[0];
+        int hour = 0;
+        for(int i = 0; i < hourCounts.length; i++){
+            if(hourCounts[i]<lowest){
+                lowest = hourCounts[i];
+                hour = i;
+            }
+        }
+        return hour;
+    }
 }
