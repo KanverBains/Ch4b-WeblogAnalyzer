@@ -92,4 +92,16 @@ public class LogAnalyzer
         }
         return hour;
     }
+    public int busiestTwoHours(){
+        int busiestTwo = 0;
+        int busiestTwoCount = 0;
+        for (int hour = 0; hour < hourCounts.length -1; hour++){
+            int periodCount = hourCounts[hour] + hourCounts[hour+1];
+            if(periodCount > busiestTwoCount){
+                busiestTwo = hour;
+                busiestTwoCount = periodCount;
+            }
+        }
+        return busiestTwo;
+    }
 }
